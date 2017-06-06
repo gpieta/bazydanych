@@ -19,7 +19,7 @@ if(isset($_GET['author']) and isset($_GET['content']))
 ?>
 
 
-<form action="GET">
+<form method="GET">
     <input type="text" name='author'>
     <input type="text" name='content'>
     <input type="submit" value='dodaj do bazy danych'>
