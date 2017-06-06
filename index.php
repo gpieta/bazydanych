@@ -16,6 +16,10 @@ if(isset($_GET['author']) and isset($_GET['content']))
 
     mysql_query("INSERT INTO Article VALUES (null,'$author', '$content')");
 }
+
+$zapytanie = mysql_query("SELECT IdArticle, Author, Content FROM Article");
+print_r($zapytanie);
+
 ?>
 
 
